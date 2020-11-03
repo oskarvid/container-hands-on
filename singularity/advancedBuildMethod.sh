@@ -30,7 +30,7 @@ Namespace:
 From: vcfsort:latest
 EOI
 # build singularity image
-sudo SINGULARITY_NOHTTPS=1 singularity build singularity/vcfsort.sif "$TMPFILE"
+SINGULARITY_NOHTTPS=1 singularity build singularity/vcfsort.sif "$TMPFILE"
 
 # remove temp file
 rm -f "$TMPFILE"
