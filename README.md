@@ -14,12 +14,11 @@ The workflow runs three rules, one that sorts the (identical) VCF files, one tha
 5. `docker container prune`
 
 # Starting a webserver
-1. I want to run an rstudio server
-2. `docker pull rocker/rstudio:3.2.0`
-3. `docker run -d -p 8787:8787 -e PASSWORD=yourpasswordhere --name my-rstudio rocker/rstudio:3.2.0`
-4. write `localhost:8787` in your browser to use rstudio
-5. Run: `docker exec -ti my-rstudio bash` - Enter a bash shell in a running container
-6. Run: `docker inspect my-rstudio` - Detailed information about the container
+1. `docker pull rocker/rstudio:3.2.0`
+2. `docker run -d -p 8787:8787 -e PASSWORD=yourpasswordhere --name my-rstudio rocker/rstudio:3.2.0`
+3. write `localhost:8787` in your browser to use rstudio
+4. Run: `docker exec -ti my-rstudio bash` - Enter a bash shell in a running container
+5. Run: `docker inspect my-rstudio` - Detailed information about the container
 
 # Build an image that installs tools using conda
 Create a file called `Dockerfile` with these contents:  
